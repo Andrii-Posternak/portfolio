@@ -4,7 +4,104 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <link rel="stylesheet" href="./index.css" />
+
+    <script src="./libs/gsap/gsap.min.js" defer></script>
+    <script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="./index.js" defer></script>
+
+    <title>Amazing scroll</title>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <header class="hero-section">
+          <img
+            class="hero"
+            src="./images/hero.png"
+            alt="hero"
+            data-speed="0.6"
+          />
+          <div class="container">
+            <div class="main-header" data-speed="0.75">
+              <h1 class="main-title">creative scroll</h1>
+            </div>
+          </div>
+        </header>
+
+        <div class="portfolio">
+          <div class="container">
+            <main class="gallery">
+              <div class="gallery__left" data-speed="0.9">
+                <img
+                  class="gallery__item"
+                  src="./images/1.jpg"
+                  alt="example work"
+                />
+                <img
+                  class="gallery__item"
+                  src="./images/2.jpg"
+                  alt="example work"
+                />
+                <div class="text-block gallery__item">
+                  <h2 class="text-block__h">
+                    Creative floating scroll with amazing perallax effect
+                  </h2>
+                  <p class="text-block__p">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Ratione nemo nisi ipsam dolor voluptas reprehenderit
+                    perspiciatis laborum facilis eum adipisci!
+                  </p>
+                </div>
+                <img
+                  class="gallery__item"
+                  src="./images/6.jpg"
+                  alt="example work"
+                />
+              </div>
+
+              <div class="gallery__right" data-speed="1.1">
+                <div class="text-block gallery__item">
+                  <h2 class="text-block__h">
+                    Creative floating scroll with amazing perallax effect
+                  </h2>
+                  <p class="text-block__p">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Ratione nemo nisi ipsam dolor voluptas reprehenderit
+                    perspiciatis laborum facilis eum adipisci!
+                  </p>
+                </div>
+                <img
+                  class="gallery__item"
+                  src="./images/4.jpg"
+                  alt="example work"
+                />
+                <img
+                  class="gallery__item"
+                  src="./images/5.jpg"
+                  alt="example work"
+                />
+                <img
+                  class="gallery__item"
+                  src="./images/3.jpg"
+                  alt="example work"
+                />
+              </div>
+            </main>
+          </div>
+        </div>
+
+        <footer></footer>
+      </div>
+    </div>
+  </body>
 </html>
