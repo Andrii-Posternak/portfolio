@@ -36,7 +36,7 @@ itemsL.forEach((item) => {
       x: 0,
       scrollTrigger: {
         trigger: item,
-        start: "-850",
+        start: "-1150",
         end: "-100",
         scrub: true,
       },

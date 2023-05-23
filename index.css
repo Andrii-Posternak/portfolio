@@ -79,7 +79,7 @@ a {
   bottom: 12vh;
 
   width: min-content;
-  font-size: calc(var(--index) * 8);
+  font-size: calc(var(--index) * 6);
   line-height: 0.9;
 }
 
@@ -96,8 +96,9 @@ a {
 .gallery {
   display: flex;
 
+  gap: 20px;
   /* padding: calc(var(--index) * 8) 0; */
-  padding: 0;
+  /* padding: 0; */
 }
 
 .gallery > * {
