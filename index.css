@@ -165,8 +165,9 @@ a {
 }
 
 .link {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   margin-top: calc(var(--gallery-gap) * 1.2);
   margin-bottom: var(--gallery-gap);
@@ -174,8 +175,9 @@ a {
 
 .link:hover {
   scale: 1.1;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact {
@@ -209,4 +211,46 @@ a {
 .contact__link:hover .contact__icon {
   /* fill: #0a51ec; */
   fill: var(--color-focus);
+  /* rotate: 90deg;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  animation: 500ms rotateIcon;
+}
+
+@keyframes rotateIcon {
+  0% {
+    rotate: -45deg;
+    scale: 1.2;
+  }
+  12.5% {
+    rotate: -90deg;
+    scale: 1.2;
+  }
+  25% {
+    rotate: -45deg;
+    scale: 1.2;
+  }
+  37.5% {
+    rotate: 0deg;
+    scale: 1.2;
+  }
+  50% {
+    rotate: 45deg;
+    scale: 1.2;
+  }
+  62.5% {
+    rotate: 90deg;
+    scale: 1.2;
+  }
+  75% {
+    rotate: 45deg;
+    scale: 1.2;
+  }
+  87.5% {
+    rotate: 0deg;
+    scale: 1.2;
+  }
+  100% {
+    rotate: -45deg;
+    scale: 1;
+  }
 }

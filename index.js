@@ -29,7 +29,7 @@ itemsL.forEach((item) => {
     item,
     {
       opacity: 0,
-      x: -50,
+      x: -70,
     },
     {
       opacity: 1,
