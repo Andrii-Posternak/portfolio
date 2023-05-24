@@ -1,7 +1,17 @@
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 const windowWidth = document.documentElement.clientWidth;
-console.log(windowWidth);
+
+const word = "FullstackDeveloper";
+const chars = word.split("");
+const titleWrapRef = document.querySelector(".position-wrap");
+
+(() => {
+  const markup = chars.map(
+    (char, index) => `<p class="main-text char${index + 1}">${char}</p>`
+  );
+  titleWrapRef.insertAdjacentHTML("beforeend", markup.join(""));
+})();
 
 // if (ScrollTrigger.isTouch !== 1) {
 ScrollSmoother.create({

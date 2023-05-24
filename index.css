@@ -161,14 +161,15 @@ a {
 
 .contact {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 
   height: 100px;
   border-top: 1px solid var(--color-title);
 
-  @media screen and (max-width: 767px) {
-    flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
   }
 }
 
@@ -197,7 +198,7 @@ a {
 
 .position-wrap {
   position: absolute;
-  bottom: 12vh;
+  bottom: 20vh;
 }
 
 .main-title--fname {
